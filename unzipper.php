@@ -5,7 +5,7 @@
  * of files (php framework or image collection) as an archive to save time.
  * As of version 0.1.0 it also supports creating archives.
  *
- * @author  Andreas Tasch, at[tec], attec.at
+ * @author  Devurl 
  * @license GNU GPL v3
  * @package attec.toolbox
  * @version 0.1.1
@@ -25,7 +25,7 @@ if (isset($_POST['dounzip'])) {
 
 if (isset($_POST['dozip'])) {
   $zippath = !empty($_POST['zippath']) ? strip_tags($_POST['zippath']) : '.';
-  // Resulting zipfile e.g. zipper--2016-07-23--11-55.zip.
+  // Resulting zipfile e.g. zipper--2023-02-18--11-55.zip.
   $zipfile = 'zipper-' . date("Y-m-d--H-i") . '.zip';
   Zipper::zipDir($zippath, $zipfile);
 }
